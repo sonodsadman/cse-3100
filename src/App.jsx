@@ -1,7 +1,9 @@
 import { Outlet, Route, Routes } from 'react-router';
-import BaseLayout from './views/BaseLayout';
-import Home from './views/Home';
+import AboutUs from './views/AboutUs';
 import AvailableCats from './views/AvailableCats';
+import BaseLayout from './views/BaseLayout';
+import ContactUs from './views/ContactUs';
+import Home from './views/Home';
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
       >
         <Route path={'/'} element={<Home />} />
         <Route path={'/available-cats'} element={<AvailableCats />} />
+        <Route path={'/contact-us'} element={<ContactUs />} />
+        <Route path={'/about-us'} element={<AboutUs />} />
       </Route>
     </Routes>
   );
